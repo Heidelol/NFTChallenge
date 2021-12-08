@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background: hsl(217, 54%, 11%);
+    }
+
+    #maincontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #container {
+      background: hsl(216, 50%, 16%);
+      padding: 20px 25px 20px 25px;
+      border-radius: 15px;
+    }
+
+    #topcard {
+      display: flex;
+      flex-direction: column;
+      
+     
+    }
+
+    #topcard img {
+      border-radius: 10px;
+      width: 300px;
+      height: 300px;
+    }
+
+    #topcard h1 {
+      font-family: 'Outfit', sans-serif;
+      color: #fff;
+      font-size: 22px;
+      
+    }
+
+    #topcard p {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      color: rgb(234, 233, 248);
+      font-size: 18px;
+      width: 300px;
+    }
+
+    #midcard {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      border-bottom: 1px solid rgb(172, 172, 172);
+      margin-bottom: 15px;
+    }
+
+    #midcard div {
+      display: flex;
+      align-items: center;
+    }
+
+    #midcard img {
+      margin-right: 4px;
+      width: 16px;
+      height: 18px; 
+    }
+
+    #midcard p {
+      font-size: 18px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    #p1 {
+      color: hsl(178, 100%, 50%);
+    }
+
+    #p2 {
+      color: hsl(215, 51%, 70%);
+    }
+
+    #botcard {
+      display: flex;
+      align-items: center;
+    }
+
+    #botcard img {
+      margin-right: 10px;
+      border: solid 1px #fff;
+      border-radius: 50%;
+    }
+
+    #botcard span p {
+      font-family: 'Outfit', sans-serif;
+    }
+
+
+    
+    #topcard h1:active {
+      color: hsl(178, 100%, 50%);
+    }
+
+    #p3 {
+      margin-left: 7px;
+      color: #fff;
+    }
+
+    #p3:active {
+      color: hsl(178, 100%, 50%);
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="maincontainer">
+    <div id="container">
+      <div id="topcard">
+        <img id="img1" src="/images/image-equilibrium.jpg" alt="">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <div id="midcard">
+        <div>
+          <img src="/images/icon-ethereum.svg" alt="">
+          <p id="p1">0.041 ETH</p>
+        </div>
+        <div>
+          <img src="/images/icon-clock.svg" alt="">
+          <p id="p2">3 days left</p>
+        </div>
+      </div>
+      <div id="botcard">
+        <img height="35px" width="35px" src="/images/image-avatar.png" alt="">
+        <p><span style="color: hsl(215, 51%, 70%);">Creation of</span><p id="p3">Jules Wyvern</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Heidelol</a>.
+  </div>
+</body>
+</html>
